@@ -56,6 +56,7 @@ body {
   flex-wrap: wrap;
   /* flex-direction: column; */
   text-align: center;
+  justify-content: space-evenly;
   margin: 20px;
   font-size: 1.5rem;
   width: auto;
@@ -69,7 +70,7 @@ body {
   /* gap: 5rem; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: space-evenly;
   background-color: rgba(68, 228, 68, 0.25);
   color: bisque;
