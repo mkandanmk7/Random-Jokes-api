@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #adc, #fcd);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  background: #adc;
+  justify-content: center;
+  gap: 2rem;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  width: 100%;
+
+  font-size: 2rem;
+}
+.header > h1 {
+  filter: drop-shadow(2px 5px 10px);
+}
+.header > img {
+  height: 150px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.menu {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.next > button {
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: #ac0;
+  color: #fff;
+  font-size: 20px;
+}
+.joke-container {
+  /* background-color: #ffa; */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+  width: auto;
+}
+.jokes-list {
+  /* height: 100px; */
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  /* height: 200px; */
+  /* gap: 5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(68, 228, 68, 0.25);
+  color: bisque;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #000;
+
+  /* width: 200px; */
+}
+.question {
+  color: rgb(90, 88, 88);
+  font-family: "Lobster", cursive;
+}
