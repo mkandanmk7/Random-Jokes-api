@@ -1,17 +1,29 @@
 let jokes = document.querySelector("#joke-container");
 getRandomJokes();
 async function getRandomJokes() {
-  let response = await fetch(
-    "https://official-joke-api.appspot.com/jokes/programming/ten"
-  );
-  let data = await response.json(); //converting json to object.
-  //   console.log(data);
-  jokes.innerHTML = ``;
-  jokesContent(data);
+  try {
+    let response = await fetch(
+      "https://official-joke-api.appspot.com/jokes/programming/ten"
+    );
+    let data = await response.json();
+    jokesContent(data);
+  } catch (err) {
+    //converting json to object.
+    //   console.log(data);
+    let oops = document.querySelector(".menu");
+    oops.innerHTML = `
+    <h3>Sorry Try again Later</h3> 
+    <img src="https://miro.medium.com/max/940/0*zzXP9vPajcRELn0x.png" alt="oops">
+
+    `;
+    jokes.append(oops);
+    console.log("Oops try again later");
+  }
 }
 
 // create jokes part
 function jokesContent(jokeList) {
+  jokes.innerHTML = ``;
   for (let joke of jokeList) {
     let jokesDiv = document.createElement("div");
 
