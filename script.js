@@ -27,7 +27,7 @@ function jokesContent(jokeList) {
 // color changes
 // let allJokes = document.querySelector(".joke-container");
 let button = document.querySelector(".btn");
-let colorArr = ["#fac", "#cad", "#fcd", "#cf0", "#acc"];
+let colorArr = ["#fac", "#cad", "#fcd", "#cf0", "#faa", "#acc"];
 
 let i = 0;
 function colorChange() {
